@@ -1,18 +1,18 @@
 
-function salaryCalculator (a, b) {
+function salaryCalculator (hours, salary) {
     const result = document.getElementById('result');
-    if (b <= 7){
-        const salary = a * b;
-        result.innerText = salary.toString();
+    if (salary <= 7){
+        const totalSalary = hours * salary;
+        result.innerText = totalSalary.toString();
         
     }
-    else if(b <= 9) {
-         const salary = (7*a) + ((b-7) * a) + ((b-7) * 50/100 * a)
-         result.innerText = salary.toString();
+    else if(salary <= 9) {
+         const totalSalary = (7*hours) + ((salary-7) * hours) + ((salary-7) * 50/100 * hours)
+         result.innerText = totalSalary.toString();
     }
     else {
-        const salary = (7*a) + ((b-7) * a) + (2 * 50/100 * a) + (b-9) * a
-        result.innerText = salary.toString();
+        const totalSalary = (7*hours) + ((salary-7) * hours) + (2 * 50/100 * hours) + (salary-9) * hours
+        result.innerText = totalSalary.toString();
     }
 }
 
