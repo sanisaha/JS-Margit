@@ -1,0 +1,35 @@
+h1 {
+    font-size: xx-large;
+    font-weight: 700;
+    text-align: center;
+    padding: 15px;
+
+}
+p {
+    font-size: xx-large;
+    margin: 30px;
+    text-align: center;
+}
+p input {
+    padding: 10px;
+}
+button {
+    padding: 10px;
+    width: 20%;
+    margin-left: 20px;
+    font-size: larger;
+}
+#calculate-btn {
+    background-color: aqua;
+}
+#reset-btn {
+    background-color: tomato;
+}
+.btn-group {
+    text-align: center;
+}
+h2 {
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
