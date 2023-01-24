@@ -119,3 +119,62 @@
 //         }
 //         console.log(smallNumber);
 // }
+
+// Problem 9
+
+function twoBiggestNumbers (){
+    let firstBiggestNumber;
+    let secondBiggestNumber;
+    for (let i = 0; i < 4; i++){
+        let inputNumbers = parseInt(prompt('put your number here'));
+        if(i === 0){
+            firstBiggestNumber = inputNumbers;
+        }
+        if (i === 1){
+            secondBiggestNumber = inputNumbers;
+        }
+        if(inputNumbers < firstBiggestNumber){
+            if(inputNumbers>secondBiggestNumber){
+                secondBiggestNumber = inputNumbers;
+            }
+        }
+        if (inputNumbers > firstBiggestNumber){
+            secondBiggestNumber = firstBiggestNumber;
+            firstBiggestNumber = inputNumbers;
+        }
+    }
+    
+    console.log(firstBiggestNumber, secondBiggestNumber);
+}
+twoBiggestNumbers();
+// Problem 10
+
+// function sumAndAverage (){
+//     let sum = 0;
+//     let count = 0;
+//     let smallestNumber;
+//     let biggestNumber;
+//     for (let i = 0; i < 4; i++){
+//         let inputNumbers = parseInt(prompt('put your number here'));
+//         sum+=inputNumbers;
+//         count++;
+//         if (i === 0){
+//             smallestNumber = inputNumbers;
+//             biggestNumber = inputNumbers;
+//         }
+//         if (inputNumbers > biggestNumber){
+//             biggestNumber = inputNumbers;
+//         }
+//         if(inputNumbers < smallestNumber){
+//             smallestNumber = inputNumbers;
+//         }
+//     }
+//     console.log(`average = ${sum / count}, sum = ${sum}, Biggest Number = ${biggestNumber}, Smallest Number = ${smallestNumber}`)
+// }
+
+// function addLength(str) { let newA = [];
+//     const arr = str.split(' ');
+//      arr.map(word => {newA.push(`${word} ${word.length}`)}) 
+//      console.log(newA)
+//    }
+// addLength('hello john');
