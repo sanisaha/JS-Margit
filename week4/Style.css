@@ -1,18 +1,21 @@
-*{
-    margin: 1%;
-}
+
 body {
     font-family: 'Raleway', sans-serif;
 }
+label{
 
-
-button {
-    padding: 1% 2%;
-
+    display: inline-block;
+    width: 150px;
+}
+input{
+    display: inline-block;
+    padding: 5px;
 }
 #calculate {
     background-color: greenyellow;
+    padding: 5px 10px;
 }
 #reset{
     background-color: red;
+    padding: 5px 10px;
 }

@@ -16,8 +16,14 @@
         <p style="padding: 2% 0%;">Make a program that asks the price of the gasoline and amount of money from the user. The program calculates how much gasoline the user gets with the money. The result is displayed to screen. If there are more than 10 litres, then message on the screen: "good, you can escape now", if less, it shows the message: "Ups, you have to stay here."</p>
     </div>
     <div>
-        <p >Price: <input type="number" id="price" style="margin-left: 20px;"></p>
-        <p >Money: <input type="number" id="money"></p>
+        <div style="margin-bottom: 20px;">
+        <label>Price:</label>
+        <input type="number" id="price">
+        </div>
+        <div style="margin-bottom: 20px;">
+        <label>Money:</label>
+        <input type="number" id="money">
+        </div>
         <button id="calculate">Calculate</button>
         <button id="reset">Reset</button>
         <p id="answer"></p>
