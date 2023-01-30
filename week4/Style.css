@@ -1,0 +1,18 @@
+*{
+    margin: 1%;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+button {
+    padding: 1% 2%;
+
+}
+#calculate {
+    background-color: greenyellow;
+}
+#reset{
+    background-color: red;
+}
